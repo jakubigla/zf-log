@@ -2,13 +2,12 @@
 
 namespace QEngine\Log;
 
-use QEngine\Log\LoggerFactory;
 use QEngine\Log\LogProcessorManagerFactory;
 use QEngine\Log\LogWriterManagerFactory;
 use QEngine\Log\Processor;
 use QEngine\Log\Writer;
 use QEngine\Mvc\Application;
-use Zend\Logger;
+use Zend\Log\Logger;
 
 return [
     'QEngine\Log' => [

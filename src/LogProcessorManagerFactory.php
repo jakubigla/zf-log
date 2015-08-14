@@ -1,6 +1,6 @@
 <?php
 
-namespace QEngineLog\Log;
+namespace QEngine\Log;
 
 use Zend\Log\ProcessorPluginManager;
 use Zend\ServiceManager\Config;
