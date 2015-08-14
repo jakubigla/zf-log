@@ -1,8 +1,8 @@
 <?php
 
-namespace QEngineLog;
+namespace QEngine\Log;
 
-use QEngineLog\EventManager\Listener\ErrorListener;
+use QEngine\Log\EventManager\Listener\ErrorListener;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\Mvc\MvcEvent;
