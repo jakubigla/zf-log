@@ -1,0 +1,27 @@
+{
+  "name": "qengine/qengine-log",
+  "description": "Generic stuff for extending ZF2 applications",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "framework",
+    "zf2",
+    "qengine"
+  ],
+  "homepage": "http://youridea.pl",
+  "require": {
+    "php": ">=5.5",
+    "zendframework/zend-modulemanager": "~2.5",
+    "zendframework/zend-eventmanager": "~2.5",
+    "zendframework/zend-servicemanager": "~2.5",
+    "zendframework/zend-log": "~2.5",
+    "qengine/qengine-base": "0.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "QEngine\\Log\\": "src/"
+    },
+    "classmap": [
+      "./Module.php"
+    ]
+  }
+}

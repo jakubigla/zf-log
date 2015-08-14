@@ -1,6 +1,6 @@
 <?php
 
-namespace QEngineLog\Log\Processor;
+namespace QEngine\Log\Processor;
 
 use QEngine\Mvc\Application;
 use Zend\Log\ProcessorPluginManager;
@@ -10,7 +10,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 /**
  * Class RequestIdFactory
  *
- * @package QEngineLog\Log\Processor
+ * @package QEngine\Log\Processor
  * @author Jakub Igla <jakub.igla@valtech.co.uk>
  */
 class RequestIdFactory implements FactoryInterface

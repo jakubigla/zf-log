@@ -1,6 +1,6 @@
 <?php
 
-namespace QEngineLog\Log\Writer;
+namespace QEngine\Log\Writer;
 
 use Zend\Log\Exception;
 use Zend\Log\Writer as ZendWriter;

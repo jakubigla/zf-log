@@ -1,13 +1,13 @@
 <?php
 
-namespace QEngineLog\Log\Processor;
+namespace QEngine\Log\Processor;
 
 use Zend\Log\Processor\ProcessorInterface;
 
 /**
  * Class RequestId
  *
- * @package QEngineLog\Log\Processor
+ * @package QEngine\Log\Processor
  * @author Jakub Igla <jakub.igla@valtech.co.uk>
  */
 class RequestId implements ProcessorInterface

@@ -1,9 +1,8 @@
 <?php
 
-namespace QEngineLog\Log;
+namespace QEngine\Log;
 
-use QEngineLog\ModuleOptions;
-use QEngineLog\Mvc\Application;
+use QEngine\Mvc\Application;
 use Zend\Log\Logger;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
@@ -12,7 +11,7 @@ use Zend\Log\Processor;
 /**
  * Class LoggerFactory
  *
- * @package QEngineLog\Log
+ * @package QEngine\Log
  * @author Jakub Igla <jakub.igla@valtech.co.uk>
  */
 class LoggerFactory implements FactoryInterface
