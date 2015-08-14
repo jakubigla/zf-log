@@ -13,7 +13,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  */
 class ModuleOptionsFactory implements FactoryInterface
 {
-    const OPTIONS_KEY = 'QEngineLog';
+    const OPTIONS_KEY = 'log';
     /**
      * Create service
      *
@@ -22,6 +22,11 @@ class ModuleOptionsFactory implements FactoryInterface
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
-        return new ModuleOptions($serviceLocator->get('Config')[self::OPTIONS_KEY]);
+        $options = $serviceLocator->get('Config')[self::OPTIONS_KEY];
+        $options = [
+            'logger_options' => $options,
+        ];
+
+        return new ModuleOptions($options);
     }
 }

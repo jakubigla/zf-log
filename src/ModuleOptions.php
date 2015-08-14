@@ -15,24 +15,24 @@ final class ModuleOptions extends AbstractOptions
     const ENV_LOG_PATH = 'LOG_PATH';
 
     /** @var array */
-    private $log;
+    private $loggerOptions;
 
     /**
      * @return array
      */
-    public function getLog()
+    public function getLoggerOptions()
     {
-        return $this->log;
+        return $this->loggerOptions;
     }
 
     /**
-     * @param array $log
+     * @param array $loggerOptions
      *
      * @return $this
      */
-    public function setLog($log)
+    public function setLoggerOptions($loggerOptions)
     {
-        $this->log = $log;
+        $this->loggerOptions = $loggerOptions;
         return $this;
     }
 }

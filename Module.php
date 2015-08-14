@@ -11,7 +11,7 @@ use Zend\Mvc\MvcEvent;
  * Class Module
  *
  * @package QEngineLog
- * @author Jakub Igla <jakub.igla@gmail.com>
+ * @author  Jakub Igla <jakub.igla@gmail.com>
  */
 class Module implements ConfigProviderInterface, ServiceProviderInterface
 {

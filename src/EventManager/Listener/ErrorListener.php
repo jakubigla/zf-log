@@ -2,6 +2,7 @@
 
 namespace QEngine\Log\EventManager\Listener;
 
+use QEngine\Mvc\Application;
 use Zend\EventManager\AbstractListenerAggregate;
 use Zend\EventManager\EventManagerInterface;
 use Zend\EventManager\ListenerAggregateInterface;
@@ -89,6 +90,6 @@ class ErrorListener extends AbstractListenerAggregate implements ListenerAggrega
      */
     private function getLogger()
     {
-        return $this->mvcEvent->getApplication()->getServiceManager()->get(Logger::class);
+        return $this->mvcEvent->getApplication()->getServiceManager()->get(Application::LOGGER);
     }
 }
